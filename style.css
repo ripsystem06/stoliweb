@@ -1,0 +1,213 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+main {
+  padding-top: 50px; /* Ajusta el espacio para que el contenido no quede detrás del encabezado */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  height: 50px;
+  z-index: 1000;
+}
+ 
+  
+  header .contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px; /* Mueve el logo al extremo izquierdo */
+}
+
+header nav.pages {
+    margin-left: 15px;
+    flex-grow: 1; /* Permite que este elemento tome el espacio restante */
+}
+
+header nav.pages a {
+    margin-right: 20px; /* Espacio entre elementos de navegación */
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav.icons {
+
+    display: flex;
+    margin-left: 10; /* Mueve los iconos al extremo derecho */
+    filter: brightness(0) invert(1);
+}
+
+header nav.icons img{
+  height: 20px;
+  margin-left: 5px;
+  padding-right: 30px;
+}
+header .busqueda .icono{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 20px;
+  filter: brightness(0) invert(1); /* Invertimos el color de los iconos a blanco */
+
+}
+
+  img {
+    height: 30px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Nuevos estilos para la barra de búsqueda, "Mi cuenta" y "Carrito de compras" */
+  
+  .busqueda {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Ajusta el margen según sea necesario */
+  }
+  
+  .busqueda .icono {
+    width: 20px; /* Ajusta el ancho según la imagen */
+    height: 20px; /* Ajusta la altura según la imagen */
+    cursor: pointer;
+  }
+  
+  .busqueda input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    padding: 5px;
+    border: 1px solid #ccc;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .busqueda:hover input {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .busqueda input:focus {
+    outline: none;
+    border-color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    header .contenedor {
+      flex-direction: column;
+    }
+  
+    header nav {
+      margin-top: 10px;
+    }
+  
+    header nav a {
+      margin-bottom: 10px;
+    }
+  }
+
+.slider{
+  aspect-ratio: 10/16;
+  width: 300px;
+  position: relative;
+  display: flex;
+  overflow: scroll;
+  scroll-snap-type: mandatory;
+}
+
+.slider img{
+  width: 100%;
+  left: 0;
+  position: sticky;
+  object-fit: cover;
+  border-radius: 2px;
+}
+/* Estilos de la clase slider */
+/*.slider {
+  position:flex;
+  width: 100%;
+  overflow: hidden; /* Evita que las imágenes se desborden del contenedor }*/
+
+
+/*.slider img {
+  position: absolute; /* Posicionamos las imágenes absolutamente dentro del slider 
+  width: 100%; /* Las imágenes ocuparán todo el ancho del viewport 
+  height: auto; /* Mantenemos la proporción de la imagen 
+  opacity: 0; /* Comenzamos con la opacidad en 0 
+  transition: opacity 1s ease; /* Agregamos una transición de opacidad suave 
+  left: 0; /* Alineamos las imágenes a la izquierda del slider 
+  top: 0; /* Alineamos las imágenes en la parte superior del slider }*/
+
+
+/*.slider img.active {
+  opacity: 1; /* Cambiamos la opacidad a 1 para mostrar la imagen activa }*/
+
+
+.opciones{
+  position: absolute; /* Coloca el grid de imágenes en una posición absoluta */
+  top: 41%; /* Alinea el grid de imágenes debajo del slider */
+  left: 10px; /* Alinea el grid de imágenes a la izquierda */
+  right: 10px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px,1fr)
+  );
+  gap: 30px;
+}
+.opciones img{
+  border-radius: 2px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 2px #000;
+
+}
+
+
+
+footer {
+  position: fixed; /* Fija la posición del pie de página */
+  bottom: 0; /* Lo sitúa al final de la pantalla */
+  width: 100%; /* Ajusta su ancho al 100% del viewport */
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  
+}

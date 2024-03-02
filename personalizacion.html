@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalización</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="contenedor">
+      <div class="logo">
+          <img src="img/logos/STOLI-NEW-BLANCO-300x68.png" alt="Logo de la empresa">
+      </div>
+      <nav class="pages">
+          <a href="index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="personalizacion.html">Personalización</a>
+          <a href="portafolio.html">Portafolio</a>
+          <a href="acerca-de.html">Acerca de</a>
+      </nav>
+      <nav class="icons">
+          <div class="busqueda">
+          <img src="img/icons/LUPA.svg" alt="Lupa" class="icono">
+          <input type="text" placeholder="Buscar" class="oculto">
+          </div>
+          <a href="micuenta.html"><img src="img/icons/PERFIL.svg" alt="perfil" class="perfil"></a>
+          <a href="carrito.html"><img src="img/icons/COMPRAS.svg" alt="perfil" class="carrito"></a>
+      </div>
+      </nav>
+  </div>
+    </header>
+  <main>
+    <section id="personalizacion">
+      <h2>Personalización</h2>
+      <form action="#">
+        <label for="idioma">Idioma:</label>
+        <select name="idioma" id="idioma">
+          <option value="es">Español</option>
+          <option value="en">Inglés</option>
+        </select>
+        <br>
+        <label for="tema">Tema:</label>
+        <select name="tema" id="tema">
+          <option value="claro">Claro</option>
+          <option value="oscuro">Oscuro</option>
+        </select>
+        <br>
+        <input type="submit" value="Guardar">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Información de contacto</p>
+    <p>Redes sociales</p>
+    <p>Copyright &copy; 2023</p>
+  </footer>
+</body>
+</html>

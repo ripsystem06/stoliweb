@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi página web</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+      <div class="contenedor">
         <div class="logo">
-            <img src="img/logos/STOLI-NEW-BLANCO-300x68.png" alt="Logo de la marca">
+            <img src="img/logos/STOLI-NEW-BLANCO-300x68.png" alt="Logo de la empresa">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Comprar</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Info</a></li>
-                <li><a href="#">Mi Cuenta</a></li>
-            </ul>
+        <nav class="pages">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="personalizacion.html">Personalización</a>
+            <a href="portafolio.html">Portafolio</a>
+            <a href="acerca-de.html">Acerca de</a>
         </nav>
-        <div class="icons">
-            <a href="#"><img src="img/icons/icons8-búsqueda-128.png" alt="Icono de búsqueda"></a>
-            <a href="#"><img src="img/icons/avatar.png" alt="Icono de perfil"></a>
-            <a href="#"><img src="img/icons/icons8-carrito-de-compras-24.png" alt="Icono de carrito"></a>
+        <nav class="icons">
+            <div class="busqueda">
+            <img src="img/icons/LUPA.svg" alt="Lupa" class="icono">
+            <input type="text" placeholder="Buscar" class="oculto">
+            </div>
+            <a href="micuenta.html"><img src="img/icons/PERFIL.svg" alt="perfil" class="perfil"></a>
+            <a href="carrito.html"><img src="img/icons/COMPRAS.svg" alt="perfil" class=""></a>
         </div>
+        </nav>
+    </div>
     </header>
 
     <main>
-        <div class="slider">
-            <img src="banner1.jpg" alt="Banner 1">
-            <img src="banner2.jpg" alt="Banner 2">
-        </div>
-    </main>
+      <div class="slider">
+          <img src="img/banners/banner1.png" alt="Banner 1">
+          <img src="img/banners/banner2.png" alt="Banner 2">
+      </div>
 
-    <footer>
-        <!-- Aquí puedes agregar el contenido del pie de página -->
-    </footer>
+      <div class="opciones">
+          <a href="pagina1.html" class="square-image"><img src="img/publi/HOMBRE.jpg" alt="Imagen 1"></a>
+          <a href="pagina2.html" class="square-image"><img src="img/publi/FALDAS.png" alt="Imagen 2"></a>
+          <a href="pagina3.html" class="rectangular-image"><img src="img/publi/POLOS-BANNER.png" alt="Imagen 3"></a>
+          <a href="pagina4.html" class="rectangular-image"><img src="img/publi/HOODIES-BANNER.png" alt="Imagen 4"></a>
+      </div>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2023 Mi página web</p>
+  </footer>
+  <script src="slider.js"></script>
 </body>
 </html>
