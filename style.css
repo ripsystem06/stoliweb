@@ -142,46 +142,34 @@ header .busqueda .icono{
     }
   }
 
-.slider{
-  aspect-ratio: 10/16;
-  width: 300px;
-  position: relative;
-  display: flex;
-  overflow: scroll;
-  scroll-snap-type: mandatory;
-}
 
-.slider img{
-  width: 100%;
-  left: 0;
-  position: sticky;
-  object-fit: cover;
-  border-radius: 2px;
-}
-/* Estilos de la clase slider */
-/*.slider {
+Estilos de la clase slider */
+.slider {
   position:flex;
   width: 100%;
-  overflow: hidden; /* Evita que las imágenes se desborden del contenedor }*/
+  overflow: hidden;  /*Evita que las imágenes se desborden del contenedor*/
+}
 
 
-/*.slider img {
-  position: absolute; /* Posicionamos las imágenes absolutamente dentro del slider 
-  width: 100%; /* Las imágenes ocuparán todo el ancho del viewport 
-  height: auto; /* Mantenemos la proporción de la imagen 
-  opacity: 0; /* Comenzamos con la opacidad en 0 
-  transition: opacity 1s ease; /* Agregamos una transición de opacidad suave 
-  left: 0; /* Alineamos las imágenes a la izquierda del slider 
-  top: 0; /* Alineamos las imágenes en la parte superior del slider }*/
+.slider img {
+  position: absolute; /*Posicionamos las imágenes absolutamente dentro del slider*/ 
+  width: 100%; /*Las imágenes ocuparán todo el ancho del viewport*/ 
+  height: auto; /*Mantenemos la proporción de la imagen*/ 
+  opacity: 0;  /*Comenzamos con la opacidad en 0 */
+  transition: opacity 1s ease;  /*Agregamos una transición de opacidad suave*/ 
+  left: 0;  /*Alineamos las imágenes a la izquierda del slider*/
+  top: 0;  /*Alineamos las imágenes en la parte superior del slider*/
+}
 
 
-/*.slider img.active {
-  opacity: 1; /* Cambiamos la opacidad a 1 para mostrar la imagen activa }*/
+.slider img.active {
+  opacity: 1; Cambiamos la opacidad a 1 para mostrar la imagen activa
+}
 
 
 .opciones{
   position: absolute; /* Coloca el grid de imágenes en una posición absoluta */
-  top: 41%; /* Alinea el grid de imágenes debajo del slider */
+  top: 67%; /* Alinea el grid de imágenes debajo del slider */
   left: 10px; /* Alinea el grid de imágenes a la izquierda */
   right: 10px;
   display: grid;
